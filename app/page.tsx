@@ -32,16 +32,7 @@ export default function Home() {
       ) : (
         <>
           <audio src="/pretty.mp3" autoPlay loop className="hidden" />
-          <DomeGallery
-            images={userImages}
-            fit={0.8}
-            minRadius={600}
-            maxVerticalRotationDeg={0}
-            segments={34}
-            dragDampening={2}
-            grayscale={false}
-            autoRotationSpeed={0.1}
-          />
+          <DomeGallery images={userImages} />
         </>
       )}
     </main>
